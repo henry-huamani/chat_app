@@ -1,10 +1,10 @@
 import express from 'express';
+import path from 'path';
 
-const server = express();
+const app = express();
 
-server.use(express.json());
-server.get('/', (_req, res) => {
-    res.send('Hola mundo');
-})
+app.use(express.json());
 
-module.exports = server;
+app.use(express.static(path.join(__dirname,'..','public')));
+
+module.exports = app;
