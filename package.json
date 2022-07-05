@@ -4,7 +4,6 @@
   "description": "Chat App",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
     "dev": "ts-node-dev index.ts",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +17,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
   }
 }
